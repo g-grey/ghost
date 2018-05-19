@@ -2,7 +2,7 @@
 
 FRAMES[0]=$(cat << END
     _____
-   /      \\ 
+   /      \ 
    |'   ' |
    |      |
     \/\/\/
@@ -11,7 +11,7 @@ END
 
 FRAMES[1]=$(cat << END
     _____
-   /      \\ 
+   /      \ 
    |.   . |
    |      |
    |/\/\/\|
@@ -21,7 +21,7 @@ END
 trap bye INT
 
 bye() {
-    printf "\ngooOOodbye..."
+    printf "\n\ngooOOodbye...\n"
     exit 0
 }
 

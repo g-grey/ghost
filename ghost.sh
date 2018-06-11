@@ -1,5 +1,12 @@
 #!/bin/bash
 
+trap bye INT
+
+bye() {
+    printf "\n\ngooOOodbye...\n"
+    exit 0
+}
+
 FRAMES[0]=$(cat << END
     _____
    /      \ 
@@ -17,13 +24,6 @@ FRAMES[1]=$(cat << END
    |/\/\/\|
 END
 )
-
-trap bye INT
-
-bye() {
-    printf "\n\ngooOOodbye...\n"
-    exit 0
-}
 
 printf "\033[0;31m"
 

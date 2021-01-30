@@ -1,6 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 
-trap bye INT
+# exit cleanly on ctrl-c
+trap bye SIGINT
 
 bye() {
     printf "\n\ngooOOodbye...\n"
@@ -25,6 +26,7 @@ FRAMES[1]=$(cat << END
 END
 )
 
+# set text red
 printf "\033[0;31m"
 
 while true

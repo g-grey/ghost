@@ -1,6 +1,6 @@
 # Ghost
 
-Displays an animated ghost in your terminal
+Displays an animated ghost in your terminal  
 
 ```
     _____  

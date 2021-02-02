@@ -26,8 +26,11 @@ FRAMES[1]=$(cat << END
 END
 )
 
-# set text red
-printf "\033[0;31m"
+# red, yellow, green, blue, white
+COLORS=("\033[0;31m" "\033[1;33m" "\033[0;32m" "\033[0;34m" "\033[1;37m")
+
+# set text to a random color
+printf ${COLORS[$RANDOM % ${#COLORS[@]}]}
 
 while true
 do
